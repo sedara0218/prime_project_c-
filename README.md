@@ -1,1 +1,1 @@
-# prime_project_c-
+# prime_project_cpp
