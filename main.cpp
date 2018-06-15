@@ -96,7 +96,7 @@ std::map<bigint, bool> get_poss_array(bigint &s, bigint &e)
     return p;
 }
 
-int main()
+int main(int argc, char** argv)
 {
     /*Initial Value Set*/
     std::vector<bigint> comb;   bigint ini3 = 3;    comb.push_back(ini3);
@@ -106,7 +106,9 @@ int main()
     bigint end = min_next_poss(start);
     std::map<bigint, bool> poss = get_poss_array(start, end);
 
-    int iter = 2;
+    std::istringstream iss( argv[1] );
+    int iter;
+    iss >> iter;
 
     clock_t start_time, end_time;
     start_time = clock();
