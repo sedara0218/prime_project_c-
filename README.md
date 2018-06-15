@@ -10,8 +10,8 @@
 *Note: you can replace the 5 with another number, this is the iterations you want to run the program. The lower the number the less primes you will find, the higher the number the higher amount of primes you will find.
 
 #### Compile with:
-* Ubuntu or Windows: g++ main.cpp -o main
-* Mac: clang++ main.cpp -o main
+* Ubuntu or Windows: g++ main.cpp bigint.cpp -o main -std=c++11
+* Mac: clang++ main.cpp bigint.cpp -o main -std=c++11
 
 ## Steps to run with InfInt (http://sercantutar.github.io/infint/):
 #### 1. Download all files to a local directory
@@ -23,8 +23,8 @@
 *Note: you can replace the 5 with another number, this is the iterations you want to run the program. The lower the number the less primes you will find, the higher the number the higher amount of primes you will find.
 
 #### Compile with:
-* Ubuntu or Windows: g++ main.cpp bigint.cpp -o main -std=c++11
-* Mac: clang++ main.cpp bigint.cpp -o main -std=c++11
+* Ubuntu or Windows: g++ main.cpp -o main
+* Mac: clang++ main.cpp -o main
 
 ## Steps to run with Arbitrary-precision arithmetic (https://sites.google.com/site/indy256/algo_cpp/bigint):
 #### 1. Download all files to a local directory
@@ -36,5 +36,5 @@
 *Note: you can replace the 5 with another number, this is the iterations you want to run the program. The lower the number the less primes you will find, the higher the number the higher amount of primes you will find.
 
 #### Compile with:
-* Ubuntu or Windows: g++ main.cpp bigint.cpp -o main
-* Mac: clang++ main.cpp bigint.cpp -o main
+* Ubuntu or Windows: g++ main.cpp -o main
+* Mac: clang++ main.cpp -o main
