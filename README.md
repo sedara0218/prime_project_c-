@@ -14,6 +14,7 @@
 * Mac: clang++ main.cpp bigint.cpp -o main -std=c++11
 
 ## Steps to run with InfInt (http://sercantutar.github.io/infint/):
+#### Pre: Download InfInt and place the InfInt.h file in the InfInt folder
 #### 1. Download all files to a local directory
 #### 2. Open the terminal inside the InfInt folder
 #### 3. Type: 
@@ -27,6 +28,7 @@
 * Mac: clang++ main.cpp -o main
 
 ## Steps to run with Arbitrary-precision arithmetic (https://sites.google.com/site/indy256/algo_cpp/bigint):
+#### Pre: Download Arbitrary-precision arithmetic and place the struct inside the main.cpp file
 #### 1. Download all files to a local directory
 #### 2. Open the terminal inside the Arbitrary-precision folder
 #### 3. Type: 
