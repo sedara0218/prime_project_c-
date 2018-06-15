@@ -28,7 +28,26 @@
 * Mac: clang++ main.cpp -o main
 
 ## Steps to run with Arbitrary-precision arithmetic (https://sites.google.com/site/indy256/algo_cpp/bigint):
-#### Pre: Download Arbitrary-precision arithmetic and place the struct inside the main.cpp file
+#### Pre: Download Arbitrary-precision arithmetic and place the struct inside the main.cpp file.  You will also need to add these functions inside the struct:
+```
+    int get_last_digit() {
+        std::string s = std::to_string(a.at(0));
+        return s.at(s.length()-1) - '0';
+    }
+    bool is_even() {
+        return this -> get_last_digit() % 2 == 0;
+    }
+    std::string to_string() {
+        std::string s = "";
+        if (!sign)
+            s += "-";
+        for (std::vector<int>::reverse_iterator it=a.rbegin(); it!=a.rend(); ++it) {
+            
+            s += std::to_string(*it);
+        }
+        return s;
+    }
+```
 #### 1. Download all files to a local directory
 #### 2. Open the terminal inside the Arbitrary-precision folder
 #### 3. Type: 
